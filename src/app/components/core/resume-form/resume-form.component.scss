@@ -1,0 +1,9 @@
+form{
+  max-width: 350px;
+  padding:20px;
+  display: flex;
+  flex-direction: column;
+  mat-form-field{
+    width:100%;
+  }
+}
