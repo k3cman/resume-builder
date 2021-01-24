@@ -4,6 +4,8 @@ import { ResumeFormComponent } from './resume-form.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {ReactiveFormsModule} from '@angular/forms';
+import {FormlyModule} from '@ngx-formly/core';
 
 
 
@@ -16,7 +18,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     CommonModule,
     MatFormFieldModule,
     MatInputModule,
-    MatExpansionModule
+    MatExpansionModule,
+    ReactiveFormsModule,
+    FormlyModule.forChild()
   ]
 })
 export class ResumeFormModule { }

@@ -1,31 +1,13 @@
-<form>
-  <mat-accordion>
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          Personal data
-        </mat-panel-title>
-      </mat-expansion-panel-header>
-      <mat-form-field>
-        <mat-label>Full Name</mat-label>
-        <input matInput />
-      </mat-form-field>
-
-      <mat-form-field>
-        <mat-label>Describe yourself</mat-label>
-        <input matInput />
-      </mat-form-field>
-
-      <mat-form-field>
-        <mat-label>Location</mat-label>
-        <input matInput />
-      </mat-form-field>
-
-      <mat-form-field>
-        <mat-label>Phone Number</mat-label>
-        <input matInput type="tel" />
-      </mat-form-field>
-    </mat-expansion-panel>
-  </mat-accordion>
-
-</form>
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <form [formGroup]="form" (ngSubmit)="onSubmit(model)">
+      <formly-form [form]="form" [fields]="fields" [model]="model" (modelChange)="modelChange($event)"></formly-form>
+      <button type="submit">Submit</button>
+    </form>
+  </mat-expansion-panel>
+</mat-accordion>
