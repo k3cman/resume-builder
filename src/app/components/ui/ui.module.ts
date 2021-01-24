@@ -4,6 +4,7 @@ import { LayoutComponent } from './layout/layout.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {ResumeFormModule} from '../core/resume-form/resume-form.module';
+import {ResumeViewModule} from '../core/resume-view/resume-view.module';
 
 
 
@@ -16,7 +17,8 @@ import {ResumeFormModule} from '../core/resume-form/resume-form.module';
     CommonModule,
     MatToolbarModule,
     MatSidenavModule,
-    ResumeFormModule
+    ResumeFormModule,
+    ResumeViewModule
   ]
 })
 export class UIModule { }

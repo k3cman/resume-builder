@@ -61,6 +61,6 @@ export class ResumeFormComponent implements OnInit {
   }
 
   modelChange(event): void {
-    console.log(event)
+    console.log(event);
   }
 }
